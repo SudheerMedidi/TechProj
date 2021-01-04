@@ -1,0 +1,8 @@
+<p>resume works!</p>
+<button (click)='downloadPdf()'>Download Pdf</button>
+<div class="container">  
+    <pdf-viewer [src]="pdfSource"
+                [original-size]="true"
+    ></pdf-viewer>
+  </div>
+

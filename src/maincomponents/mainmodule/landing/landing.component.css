@@ -1,0 +1,24 @@
+.head {
+    margin: 30px;
+}
+.accordian {
+    margin: 40px;
+    width: 60%;
+    justify-content: center;
+}
+.item {
+    margin-top: 4px;
+}
+.myimg {
+    border-radius: 50%;
+    margin-bottom: 5px;
+
+}
+.para {
+    margin: 0PX;
+    cursor: pointer;
+}
+.routerLink {
+    text-decoration: none;
+    cursor: pointer;
+}

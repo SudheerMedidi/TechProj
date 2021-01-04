@@ -1,0 +1,9 @@
+<div *ngIf="id > 0;else other_content">
+<div class="item ">DeveloperName:{{data.name}}</div>
+<div class="item">ProjectName:{{data.projectName}}</div>
+<div class="item">ProjectStatus:{{data.status}}</div>
+<div class="item">StartDateOfProject:{{data.startdate}}</div>
+<p class="item">ProjectInfo:{{data.Info}}</p>
+</div>
+
+<ng-template #other_content><h2 style="display: flex;justify-content: center;">No Projects Available</h2></ng-template>

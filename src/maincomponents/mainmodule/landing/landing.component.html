@@ -1,0 +1,43 @@
+<div class="head">
+    <div class="accordian">
+        <mat-accordion>
+            <mat-expansion-panel *ngFor="let item of employeeDetails" (click)="openGroup(item)">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h1>Profile</h1>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div>
+                    <img class="myimg" src="../../assets/man.jpg" style="width:150px">
+                    <div class="item"> Name: {{item.name}} </div>
+                    <div class="item"> Email: {{item.email}} </div>
+                    <div class="item"> Phone: {{item.phone}} </div>
+                    <div class="item"> Qualification: {{item.qualification}} </div>
+                    <div class="item"> Location: {{item.location}} </div>
+                    <div ><a class="routerLink" [routerLink]="['/viewResume']" >
+                        View Resume
+                      </a>
+                      </div>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <h1>Projects He Worked</h1>
+    <div class="accordian">
+        <mat-accordion>
+            <mat-expansion-panel *ngFor="let item of employeeWorkingProjects">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                       <h3> {{item.projectName}}</h3>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                                 <div class="item"> <p  class="para" >ProjName:{{item.projectName}} </p></div>
+                                 <div class="item"> <p  class="para" >StartDate:{{item.startdate}} </p></div>
+                                 <div class="item"> <p  class="para" >Position:{{item.position}} </p></div>
+                                 <div class="item"> <p  class="para" >Status:{{item.status}} </p></div>
+                                 <div><a class="routerLink" (click)="onClick(item.id)">Click here for further Info</a> </div>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
